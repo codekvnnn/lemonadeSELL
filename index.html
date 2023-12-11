@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Lemonade Recipes</title>
+</head>
+<body>
+    <h1>Lemonade Recipes</h1>
+    <form id="recipeForm">
+        <input type="text" id="title" placeholder="Recipe Title">
+        <textarea id="ingredients" placeholder="Ingredients"></textarea>
+        <textarea id="instructions" placeholder="Instructions"></textarea>
+        <button type="submit">Submit Recipe</button>
+    </form>
+    <div id="recipes">
+        <!-- Recipes will be listed here -->
+    </div>
+
+    <script>
+        document.getElementById('recipeForm').onsubmit = function(event) {
+            event.preventDefault();
+
+        };
+
+    </script>
+</body>
+</html>
